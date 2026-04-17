@@ -1,4 +1,4 @@
-# notify-docs
+# notification-docs
 
 Documentation for the partner notification platform: onboarding, notification setup, authentication, and technical discovery flows.
 
@@ -15,9 +15,9 @@ Open the URL printed in the terminal (usually `http://127.0.0.1:8000/`).
 
 ## GitHub Pages (automatic)
 
-**Published site:** [https://sydlab.github.io/notify-docs/](https://sydlab.github.io/notify-docs/)
+**Published site:** [https://sydlab.github.io/notification-docs/](https://sydlab.github.io/notification-docs/)
 
-The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds the site with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) on every push to `main` (and on manual **Run workflow**). It deploys to the repository’s default GitHub Pages URL (above for this project). The workflow does not hardcode a hostname; canonical links and the “edit on GitHub” targets come from [`mkdocs.yml`](mkdocs.yml) (`site_url`, `repo_url`, `repo_name`).
+The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds the site with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) on every push to `main` (and on manual **Run workflow**). It deploys to the repository’s default GitHub Pages URL (above assumes the GitHub repository is named `notification-docs`). The workflow does not hardcode a hostname; canonical links and the “edit on GitHub” targets come from [`mkdocs.yml`](mkdocs.yml) (`site_url`, `repo_url`, `repo_name`).
 
 1. In the GitHub repository, go to **Settings → Pages**.
 2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
