@@ -15,12 +15,14 @@ Open the URL printed in the terminal (usually `http://127.0.0.1:8000/`).
 
 ## GitHub Pages (automatic)
 
-The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds the site with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) on every push to `main` (and on manual **Run workflow**).
+**Published site:** [https://sydlab.github.io/notify-docs/](https://sydlab.github.io/notify-docs/)
+
+The workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) builds the site with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) on every push to `main` (and on manual **Run workflow**). It deploys to the repository’s default GitHub Pages URL (above for this project). The workflow does not hardcode a hostname; canonical links and the “edit on GitHub” targets come from [`mkdocs.yml`](mkdocs.yml) (`site_url`, `repo_url`, `repo_name`).
 
 1. In the GitHub repository, go to **Settings → Pages**.
 2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
-3. Edit [`mkdocs.yml`](mkdocs.yml): set `site_url` and `repo_url` / `repo_name` to match your site. For a **project site**, use `https://<owner>.github.io/<repo>/` including the trailing slash. For a **user or organization site** (`<user>.github.io` with no repo path), follow [GitHub Pages docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites) and adjust `site_url` accordingly.
-4. Push to `main`. The **pages-build-deployment** / **Deploy documentation to GitHub Pages** run should publish the `site/` output.
+3. If you fork this repo or change the Pages URL, update `site_url`, `repo_url`, and `repo_name` in [`mkdocs.yml`](mkdocs.yml) so search, sitemaps, and repo links stay correct.
+4. Push to `main`. The **Deploy documentation to GitHub Pages** workflow should publish the `site/` output.
 
 ## Layout
 

@@ -1,10 +1,9 @@
-# GitHub Pages: set site_url to https://<owner>.github.io/<repo>/ (trailing slash)
-# Project pages use /<repo>/; user/org pages differ — see README.
+# Project site: https://<owner>.github.io/<repo>/ — keep trailing slash on site_url.
 site_name: Notify documentation
 site_description: Partner notification platform — onboarding, feeds, auth, technical flows
-site_url: https://example.github.io/notify-docs/
-repo_url: https://github.com/example/notify-docs
-repo_name: example/notify-docs
+site_url: https://sydlab.github.io/notify-docs/
+repo_url: https://github.com/sydlab/notify-docs
+repo_name: sydlab/notify-docs
 edit_uri: edit/main/docs/
 
 docs_dir: docs
